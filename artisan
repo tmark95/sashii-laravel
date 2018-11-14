@@ -3,6 +3,8 @@
 
 define('LARAVEL_START', microtime(true));
 
+/* Si lo traigo yo de git tengo que hacer composer install */
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
