@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
   </head>
   <body style="margin-top: 5%;">
     <?php if(!empty($message)): ?>

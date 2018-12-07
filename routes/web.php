@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('start');
 });
 
-Route::get('/', 'HomeController@show');
+Route::get('/home', 'HomeController@show');
 Route::get('/login' , 'LoginController@show');
+Route::get('/register' ,'RegisterController@show');
+Route::get('/perfil', 'PerfilController@show');
+Route::get('/start', 'StartController@show');
