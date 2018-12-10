@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="/css/estilos.css">
   </head>
   <body style="margin:5% auto; border: solid; border-color: black; background-color: white; padding: 20px;">
-    <img src="img/sashiilogo.png" style="max-width: 200px; margin-top: 5%;">
+    <img class="logostart" src="img/sashiilogo.png">
     <?php if(!empty($user)): ?>      
       <a href="pages/logout.php">
         Logout
       </a>
-    <?php else: ?>      
-      <h2 style="color: black; margin-bottom: 2%;">Por Favor Ingrese o Registrese</h2>
+    <?php else: ?>   
+
+    <h2 class="registrarse">Por Favor Ingrese o Registrese</h2>
       <a href="/login">Login</a> or
       <a href="/register">Registrarse</a>
     <?php endif; ?>

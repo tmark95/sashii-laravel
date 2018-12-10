@@ -7,6 +7,11 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
+       public function show()
+    {
+        return view('login');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -25,7 +30,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/header';
 
     /**
      * Create a new controller instance.

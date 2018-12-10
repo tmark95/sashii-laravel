@@ -15,8 +15,15 @@ Route::get('/', function () {
     return view('start');
 });
 
-Route::get('/home', 'HomeController@show');
+Route::get('/', 'StartController@show');
 Route::get('/login' , 'LoginController@show');
 Route::get('/register' ,'RegisterController@show');
 Route::get('/perfil', 'PerfilController@show');
 Route::get('/start', 'StartController@show');
+Route::get('/elmenu', 'MenuController@show');
+
+Route::post('register', ['as' => 'register', 'uses' => 'RegisterController@save_data']);
+Auth::routes();
+Route::get('/header', 'HeaderController@show')->name('header');
+Route::get('/vegetarianos', 'ProductosController@show')
+

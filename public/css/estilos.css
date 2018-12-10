@@ -67,12 +67,22 @@ header {
     align-items: center;
     border-radius: 0px ;
 }
-
 .logo {
     padding-top: 5px;
     height: 70px;
 }
+.logoenheader{
+  width:30px;
+}
+.registrarse{
+   color: black;
+   margin-bottom: 2%;
+}
 
+.logostart{
+  width: 200px;
+  margin-top: 5%;
+}
 .nav-cel {
     padding: 10px;
     background-color: transparent;

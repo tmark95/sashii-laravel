@@ -14,16 +14,18 @@
       <a href="header.php"><img class="logo" src="/img/sashiilogo.png"></a>
       <ul class="nav-desktop">
         <li><a href="#">Home</a></li>
-        <li><a href="menu.php">El Menu</a></li>
-        <li><a href="faq.php">Faq</a></li>
-        <li><a href="contacto.php">Contacto</a></li>
+        <li><a href="menu">El Menu</a></li>
+        <li><a href="faq">Faq</a></li>
+        <li><a href="contacto">Contacto</a></li>
       </ul>
-      <a href="perfil.php"><i class="fas fa-user-circle fa-2x"></i></a>
-      <a href="" style="color: red;">Logout</a>
+      <a href="perfil"><i class="fas fa-user-circle fa-2x"></i></a>
+      <a href="">Logout</a>
       <a class="carrito" href="#"><i id="carrito" class="fas fa-shopping-cart"></i></a>
   </header>
   <main>
+
       @yield('content')
+      
   </main>
 
   <hr>
@@ -37,9 +39,9 @@
   <hr>
   <footer>
     <li><a href="#">Home</a></li>
-    <li><a href="menu.php">El Menu</a></li>
-    <li><a href="faq.php">Faq</a></li>
-    <li><a href="contacto.php">Contacto</a></li>
+    <li><a href="/elmenu">El Menu</a></li>
+    <li><a href="/faq">Faq</a></li>
+    <li><a href="/contacto">Contacto</a></li>
   </footer>
 </body>
 </html>
