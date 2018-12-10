@@ -24,19 +24,6 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="lastname" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="lastname" type="text" class="form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname" value="{{ old('lastname') }}" required autofocus>
-
-                                @if ($errors->has('lastname'))
-                                    <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('lastname') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
@@ -49,13 +36,6 @@
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
-                            </div>
-                        </div>
-                         <div class="form-group row">
-                            <label for="email-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm E-mail') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email-confirm" type="text" class="form-control" name="email_confirmation" required>
                             </div>
                         </div>
 
@@ -95,3 +75,19 @@
     </div>
 </div>
 @endsection
+
+
+{{-- // TODO: Campos del formulario original. Agerar los nuevos arriba
+
+<form action="/register" method="POST" enctype="multipart/form-data">
+  <input name="nombre" type="text" placeholder="Ingrese su nombre" value="" required>
+  <input name="apellido" type="text" placeholder="Ingrese su apellido" value="" required>
+  <input name="email" type="email" placeholder="Ingrese su email" value="" required>
+  <input name="confirm_email" type="email" placeholder="Confirmar email" required>
+  <input name="password" type="password" placeholder="Introduzca su contraseña" required>
+  <input name="confirm_password" type="password" placeholder="Confirmar contraseña" required>
+  <input id= "terminos" name="terminos" type="checkbox" required>
+  <label for="terminos" style="">Acepto los Terminos y Condiciones.</label><br><br>
+  <input type="submit" value="Enviar">
+</form>
+ --}}

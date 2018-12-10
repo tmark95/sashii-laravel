@@ -10,20 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('start');
-});
-
-Route::get('/', 'HeaderController@show');
-Route::get('/login' , 'LoginController@show');
-Route::get('/register' ,'RegisterController@show');
-Route::get('/profile', 'PerfilController@show');
-Route::get('/start', 'StartController@show');
-Route::get('/elmenu', 'MenuController@show');
-
-Route::post('register', ['as' => 'register', 'uses' => 'RegisterController@save_data']);
 Auth::routes();
-Route::get('/header', 'HeaderController@show')->name('header');
-Route::get('/vegetarianos', 'ProductosController@show');
-
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/menu', 'MenuController@index')->name('menu');

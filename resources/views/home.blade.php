@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@extends('header')
 
 @section('content')
 <div class="container">
@@ -14,12 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-@extends('header')
 
-     <h1>Bienvenido</h1>
-     <br>
-     <img src="/img/sushi.gif" alt="">
-
+                    You are logged in!
                 </div>
             </div>
         </div>

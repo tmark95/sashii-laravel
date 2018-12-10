@@ -1,5 +1,5 @@
-@extends('productos')
-@section('main')
+@extends('master')
+@section('productos')
 <h1> Vegetarianos </h1>
   	<div class="producto">
     	<img src="../../img/vegetariano.jpg" alt="">
@@ -38,13 +38,4 @@
 
     <a href="menu.php" class="volver">Volver al Menú</a>
 
-  <hr>
-   <div class="banner-contacto">
-     <i id="celular" class="fas fa-mobile-alt"> - 11.4041.2160</i>
-     <i id="mail" class="far fa-envelope"> - info@tmtsushi.com</i>
-     <div id="redes">
-     <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"> - @TMTsushi</i>
-     </div>
-   </div>
-   <hr>
-   @endsection
+@endsection
