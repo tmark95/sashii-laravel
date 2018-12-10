@@ -1,4 +1,3 @@
-@extends('index')
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +24,7 @@
       <a class="carrito" href="#"><i id="carrito" class="fas fa-shopping-cart"></i></a>
   </header>
   <main>
-    @yield('content')
+    @yield('index')
     {{--  @section('content')
 
       <div class="galeria">

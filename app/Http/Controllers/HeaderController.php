@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class HeaderController extends Controller
 {
+    public function show()
+    {
+        return view('index');
+    }
     /**
      * Create a new controller instance.
      *
@@ -21,8 +25,4 @@ class HeaderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show()
-    {
-        return view('header');
-    }
 }

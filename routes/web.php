@@ -15,10 +15,10 @@ Route::get('/', function () {
     return view('start');
 });
 
-Route::get('/', 'StartController@show');
+Route::get('/', 'HeaderController@show');
 Route::get('/login' , 'LoginController@show');
 Route::get('/register' ,'RegisterController@show');
-Route::get('/perfil', 'PerfilController@show');
+Route::get('/profile', 'PerfilController@show');
 Route::get('/start', 'StartController@show');
 Route::get('/elmenu', 'MenuController@show');
 
