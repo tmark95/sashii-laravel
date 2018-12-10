@@ -1,7 +1,6 @@
 @extends('productos')
-@section('vegetarianos')
+@section('main')
 <h1> Vegetarianos </h1>
-
   	<div class="producto">
     	<img src="../../img/vegetariano.jpg" alt="">
       <h3 class="titulo">Vegetarian Roll</h3>

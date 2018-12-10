@@ -23,16 +23,17 @@
     <a class="carrito" href="#"><i id="carrito" class="fas fa-shopping-cart"></i></a>
   </header>
 
-  @yield('vegetarianos')
   
-  <main>
 
+  <main>
+    @yield('main')
+  </main>
+  
    <footer>
 		 <li><a href="header.php">Home</a></li>
      <li><a href="menu.html">El Menu</a></li>
      <li><a href="faq.html">Faq</a></li>
      <li><a href="contacto.php">Contacto</a></li>
    </footer>
-  </main>
 </body>
 </html>

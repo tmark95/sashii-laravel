@@ -25,5 +25,5 @@ Route::get('/elmenu', 'MenuController@show');
 Route::post('register', ['as' => 'register', 'uses' => 'RegisterController@save_data']);
 Auth::routes();
 Route::get('/header', 'HeaderController@show')->name('header');
-Route::get('/vegetarianos', 'ProductosController@show')
+Route::get('/vegetarianos', 'ProductosController@show');
 
