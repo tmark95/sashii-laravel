@@ -13,11 +13,10 @@
 
   </head>
   <body>
-    <header>
+    <header class="container">
       <section class="real-header">
-        <a href="/"><img class="logo" src="/img/sashiilogo.png"></a>
         <a href="perfil.php"><i class="fas fa-user-circle fa-2x"></i></a>
-        <a href="">Logout</a>
+        <a href="/"><img class="logo" src="/img/sashiilogo.png"></a>
         <a id="carrito" class="carrito" href="#"><i class="fas fa-shopping-cart"></i></a>
       </section>
         <nav class="sub-header">
