@@ -3,7 +3,16 @@
 @section('add')
     <h1>AGREGATOR</h1>
     <hr>
-    <form action="/add2" method="post">
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    <form action="{{ route('add2') }}" method="post">
         {{ csrf_field() }}
         <div class="form-group">
             <label for="title">Nombre del Producto</label>
@@ -33,15 +42,6 @@
             <label for="description">Product Description</label>
             <textarea type="text" class="form-control" id="productDescription" name="description"></textarea>
         </div>
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
         <button type="submit" class="btn btn-primary">AGREGAR PRODUCTO NUEVO</button>
     </form>
 @endsection
