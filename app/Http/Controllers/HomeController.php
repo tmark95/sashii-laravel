@@ -25,4 +25,12 @@ class HomeController extends Controller
     {
         return view('contents.featured');
     }
+    public function contact(){
+        return view('contents.contact');
+    }
+    public function faq(){
+        return view('contents.faq');
+    }
+
+
 }

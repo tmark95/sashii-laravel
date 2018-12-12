@@ -22,8 +22,12 @@
         <nav class="sub-header">
           <ul class="menu">
             <li><a href="/menu">Menú</a></li>
-            <li><a href="faq.php">Faqs</a></li>
-            <li><a href="contacto.php">Contacto</a></li>
+            <li><a href="/faq">Faqs</a></li>
+            <li><a href="/contact">Contacto</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Registrarse</a></li>
+            <br>
+            <li><a href="/add">Add Product</a></li>
           </ul>
         </nav>
     </header>
@@ -31,7 +35,9 @@
     @yield('featured')
     @yield('menu')
     @yield('veg')
-
+    @yield('contact')
+    @yield('add')
+    @yield('products')
 
     </main>
     <footer>
